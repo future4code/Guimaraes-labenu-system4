@@ -3,5 +3,29 @@ content-type: application/json
 
 {
     "nome": "Gebru"
-
 }
+
+###
+POST http://localhost:3003/docente HTTP/1.1
+Content-Type: application/json
+
+{
+    "nome": "PH",
+    "email": "ph09duarte@gmail.com",
+    "data_nasc": "1987/02/05",
+    "turma_id": "4aa74cca-0655-4428-96ae-d93928a3eb5c"
+}
+
+###
+POST http://localhost:3003/docente HTTP/1.1
+Content-Type: application/json
+
+{
+    "nome": "Juliana Moraes",
+    "email": "juliana@email.com",
+    "data_nasc": "1987/05/19",
+    "turma_id": "b837e09f-225c-4813-8318-feb74590a2a4"
+}
+
+###
+GET http://localhost:3003/docente HTTP/1.1

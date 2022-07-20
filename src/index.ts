@@ -1,10 +1,19 @@
 // import { Request, Response } from "express";
-// import { app } from "./app";
 // import { Character } from "./data/Character";
 // import { CharacterDataBase } from "./data/CharacterDataBase";
 // import { connection } from "./data/connection";
 
 import { app } from "./app";
+import { GetAllDocente } from "./endpoits/GetAllDocente";
+import { PostDocente } from "./endpoits/PostDocente";
 import { postTurma } from "./endpoits/PostTurma";
 
+//Endpoints Turma
 app.post("/turma", postTurma);
+
+//Endpoints Docente
+app.post('/docente', PostDocente)
+app.get('/docente', GetAllDocente)
+
+
+//Endpoints Estudante
