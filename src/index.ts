@@ -5,5 +5,6 @@
 // import { connection } from "./data/connection";
 
 import { app } from "./app";
+import { postTurma } from "./endpoits/PostTurma";
 
-app;
+app.post("/turma", postTurma);
