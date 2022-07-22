@@ -7,13 +7,22 @@ import { app } from "./app";
 import { GetAllDocente } from "./endpoits/Docente/GetAllDocente";
 import { PostDocente } from "./endpoits/Docente/PostDocente";
 import { postTurma } from "./endpoits/PostTurma";
+import { getEstudanteNome } from "./endpoits/Estudante/GetEstudanteNome";
+import { getEstudantes } from "./endpoits/Estudante/GetEstudantes";
+import { postEstudante } from "./endpoits/Estudante/PostEtudante";
+import { putEstudanteTurma } from "./endpoits/Estudante/PutEstudanteTurma";
+import { getTurma } from "./endpoits/GetTurma";
 
 //Endpoints Turma
+app.get("/turma", getTurma);
 app.post("/turma", postTurma);
 
 //Endpoints Docente
-app.post('/docente', PostDocente)
 app.get('/docente', GetAllDocente)
-
+app.post('/docente', PostDocente)
 
 //Endpoints Estudante
+app.get("/estudante", getEstudantes);
+app.get("/estudante/nome", getEstudanteNome);
+app.post("/estudante", postEstudante);
+app.put("/estudante/turma", putEstudanteTurma );
