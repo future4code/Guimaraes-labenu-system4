@@ -4,8 +4,8 @@
 // import { connection } from "./data/connection";
 
 import { app } from "./app";
-import { GetAllDocente } from "./endpoits/GetAllDocente";
-import { PostDocente } from "./endpoits/PostDocente";
+import { GetAllDocente } from "./endpoits/Docente/GetAllDocente";
+import { PostDocente } from "./endpoits/Docente/PostDocente";
 import { postTurma } from "./endpoits/PostTurma";
 
 //Endpoints Turma

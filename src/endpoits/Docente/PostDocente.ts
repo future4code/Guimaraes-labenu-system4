@@ -1,6 +1,6 @@
 import { Request, Response } from 'express'
-import { Docente } from '../classes/Docente'
-import { connection } from '../data/connection'
+import { Docente } from '../../classes/Docente'
+import { connection } from '../../data/connection'
 import { v4 as generateId } from 'uuid'
 
 export const PostDocente = async (req: Request, res: Response): Promise<any> => {
